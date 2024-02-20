@@ -65,3 +65,94 @@ we should only return only one div in a particular component
   
 // code maintainablity - high vice Versa code readability
 
+start // - npm start
+
+// react is an single page application composed of components
+
+// in react we can only render one tag
+
+const root = reactDOM.createRoot(document.getElementById("root"));
+root.render(
+    // only one tag possible
+)
+
+
+//JSX - javascript expression
+//javascript embidded html - means we can write html inside JS
+function App()
+{
+    <div>
+        <h1>Hello world</h1>
+        <p>Welcome to my world sai kumar </p>
+    </div>
+}
+export default App;
+
+
+//js inside JSX
+function App()
+{
+    return (<div>
+        <h1>Hello world</h1>
+        <p>Welcome to my world Mr.Saikumar Rapeti</p>
+        <p>{1+2}</p>  --  javascript
+    </div>)
+}
+
+//we can not write for loop inside JSX because its an loop not an expression 
+//instead we can use MAP expression
+
+// {[1,2,3].map((e)=>
+//     (
+//         <p>{e*100}</p>
+//     )
+
+//     }
+
+// you can write only expressions not statements
+
+
+//per file of JSX we can have multiple normal exports 
+//Nav.js fle 
+function add(a,b)
+{
+    return a+b;
+}
+function Nav()
+{
+    return (<div>This is nav{add(1,23)}</div>)
+}
+
+export {add,Nav};
+import {add,Nav} from "./Nav";
+
+
+//only one default export
+
+//nav.jsx file
+function add(a,b)
+{
+return a+b;
+}
+
+function sub(a,b)
+{
+    return a-b;
+}
+
+function Nav()
+{
+    return(
+        <div>
+
+        </div>
+    );
+ }
+
+export default Nav; //default export
+export {add,sub}; //normal exorts 
+import Nav, {add,sub} from "Nav"; //importing default and normal exports
+
+
+//defer 
+//it will download and compile the code ready and executes once after all the HTML code rendered.
