@@ -1,0 +1,67 @@
+//react
+
+//what is react ?
+// is a open source library(some has wrote we are using it) for building user interfaces
+
+
+/*
+
+why node is installed for react app?
+node is a runtime env which helps to run the js code outside the browser directly.
+and also the script to install react application is based on node (npx create-react-app app-01)
+
+npm - node package manager(helps in installing dependencies in the project using node.js)
+ex: npm install axios
+npm uninstall axios
+
+for specific version -> npm i axios@....;
+
+for latest -> npm i axios@latest
+
+for global install  -> npm i -g axios@latest
+
+
+
+npx - node package executer() - allows us to run javascript packages without installing it(used only once).
+
+
+package.json - tells what kind of dependencies this application is holding currently.
+
+
+package-lock.json - advanced version of package.json gives u dependencies of dependencies and theirs versions.
+
+
+node_modules - all the scripts of dependencies will be present 
+
+
+npm install - install all the dependencies
+
+
+gitignore - to untrack the particular files
+
+
+public and src - are main folders to show the content
+
+src - 
+
+pubic - 
+
+ReactDOM - how? & where?
+
+React - what ? to mount
+
+we should only return only one div in a particular component
+
+*/
+
+
+// why react?
+// to simplify DOM manipulation
+// faster making UI
+// learning curve is less
+// easy to understand
+
+// components - superPower(reusablity of piece of code)
+  
+// code maintainablity - high vice Versa code readability
+
