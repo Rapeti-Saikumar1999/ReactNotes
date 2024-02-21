@@ -156,3 +156,44 @@ import Nav, {add,sub} from "Nav"; //importing default and normal exports
 
 //defer 
 //it will download and compile the code ready and executes once after all the HTML code rendered.
+
+
+
+//what can we export and import - modules
+
+//styling in react - Method 1 inline css
+const nav = ()=>
+{
+    const navStyles = {
+        backgroundColor:"red",
+        border: "2px solid black",
+    };
+    return <div style={navStyles}>This is Nav Bar!</div>;
+};
+
+
+//method 2 - via external 
+//treat styles sheet as module
+step1: chnage the file name to "footer.module.css"  - as modules can be exported or imported
+step2: write css in modified css file
+// .footerStyles
+// {
+//     background-color:red;
+// }
+
+step3: import the css module and include the styles
+
+// import something from "./footer.module.css"
+// const footer = ()=>
+// {
+//     return <div className={something.footerStyles}>This is Footer</div>;
+// }
+
+
+//virtual DOM
+when there is an update in specific part the virtual DOM takes the snapshot of the prev and present,
+it will compare both and make changes only the modified part.
+
+where as the actual DOM it rerenders all the DOM
+
+
