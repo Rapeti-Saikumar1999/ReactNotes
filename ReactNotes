@@ -196,4 +196,68 @@ it will compare both and make changes only the modified part.
 
 where as the actual DOM it rerenders all the DOM
 
+//what is real DOM?
+// Document object model - each element and attribute will become the node in DOM Tree
+
+// 1)React Works?
+// 2)What is virtual DOM?
+
+// 3)JSX
+//java script extension
+
+
+// 4)What are elements?
+// a piece of code 
+
+// 5)what are components?
+// combination of multiple elements in a meaningfull farm
+
+function component1()  //componenet
+{
+    return (<div>
+            <h1>heading1</h1>  //element
+            <h2>heading2</h2>  //element
+            <h3>heading3</h3>  //element
+           </div>)
+}
+
+// 6)kind of components?
+1.functional Component
+2.Class Component
+
+// what is a function?
+// reusable piece of code
+
+// 7)what are functional components?
+// rule - the function name should match with the file name
+// it will only returns 
+
+//in case of default export - we can have our own named conevtion while importing
+
+default export function component1()
+{
+return <div></div>
+}
+
+import XYZ from "./component1"; //here XYZ is named conention as the eport is an default
+//what may be the name the the export will be component1 in default case.
+
+//in case of normal export we can not have our own named conenctions
+export function component2()  //nrmal export
+{
+    return <div></div>
+}
+
+default export function component1()  //defualt export
+{
+    return (<div>
+            <h1>heading1</h1>  //element
+            <h2>heading2</h2>  //element
+            <h3>heading3</h3>  //element
+           </div>)
+}
+
+import component1/"any name" from "./component" //default import  - can be any name
+import {component2} from "./component";  //normal  import - we should give exact name with in the braces
+
 
